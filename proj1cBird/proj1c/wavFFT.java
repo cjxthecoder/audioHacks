@@ -49,7 +49,7 @@ public class wavFFT {
 
     // main method, solely for testing purposes
     public static void main(String[] args) {
-        File fichier_son = new File("son/freq1.wav");
+        File fichier_son = new File("642765_Squid-Melody-Blue-Version.wav");
         double[] test = realFFT(fichier_son); 
         int i;
 
