@@ -11,7 +11,7 @@ public class wavFFT {
     public static double[] realFFT(File file)
     {
         // Get the .wav data using the readWav class
-        double[] data_to_fft = readWav.getWavData(file);
+        double[] data_to_fft = readWav.getWavData(new File("642765_Squid-Melody-Blue-Version.wav"));
 
         /* Get the length of the array.
         Since we are feeding real numbers into the fft,
