@@ -1,4 +1,4 @@
-package proj1c;
+
 
 import org.jtransforms.fft.DoubleFFT_1D;
 

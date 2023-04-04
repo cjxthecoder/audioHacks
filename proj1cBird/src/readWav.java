@@ -1,5 +1,3 @@
-package proj1c;
-
 import org.wavFile.*;
 import java.io.*;
 
