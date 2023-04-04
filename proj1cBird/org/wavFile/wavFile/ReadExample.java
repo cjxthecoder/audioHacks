@@ -1,5 +1,4 @@
 package wavFile;
-
 import java.io.*;
 
 public class ReadExample
