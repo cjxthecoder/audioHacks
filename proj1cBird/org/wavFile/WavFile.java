@@ -1,3 +1,4 @@
+package wavFile;
 // Wav file IO class
 // A.Greensted
 // http://www.labbookpages.co.uk

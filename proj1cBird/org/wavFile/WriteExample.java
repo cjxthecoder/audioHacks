@@ -1,3 +1,4 @@
+package wavFile;
 import java.io.*;
 
 public class WriteExample
