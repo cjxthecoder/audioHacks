@@ -700,6 +700,8 @@ public class WavFile
 
 	public static void main(String[] args)
 	{
+		args = new String[1];
+		args[0] = "726455_Lets-Stomp.wav";
 		if (args.length < 1)
 		{
 			System.err.println("Must supply filename");
