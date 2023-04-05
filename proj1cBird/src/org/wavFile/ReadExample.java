@@ -9,7 +9,7 @@ public class ReadExample
 		try
 		{
 			// Open the wav file specified as the first argument
-			WavFile wavFile = WavFile.openWavFile(new File("726455_Lets-Stomp.wav"));
+			WavFile wavFile = WavFile.openWavFile(new File("48000/726455_Lets-Stomp_48000.wav"));
 
 			// Display information about the wav file
 			wavFile.display();

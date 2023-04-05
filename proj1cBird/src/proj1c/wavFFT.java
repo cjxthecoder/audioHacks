@@ -11,7 +11,7 @@ public class wavFFT {
     public static double[] realFFT(File file)
     {
         // Get the .wav data using the readWav class
-        double[] data_to_fft = readWav.getWavData(new File("726455_Lets-Stomp.wav"));
+        double[] data_to_fft = readWav.getWavData(new File("48000/726455_Lets-Stomp_48000.wav"));
 
         /* Get the length of the array.
         Since we are feeding real numbers into the fft,
@@ -49,7 +49,7 @@ public class wavFFT {
 
     // main method, solely for testing purposes
     public static void main(String[] args) {
-        File fichier_son = new File("726455_Lets-Stomp.wav");
+        File fichier_son = new File("48000/726455_Lets-Stomp_48000.wav");
         double[] test = realFFT(fichier_son); 
         int i;
 

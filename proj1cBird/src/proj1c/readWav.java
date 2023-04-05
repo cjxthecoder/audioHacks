@@ -78,7 +78,7 @@ public class readWav {
     public static void main(String[] args)
     {
         // test, everything seems to be working
-        File fichier_son = new File("726455_Lets-Stomp.wav");
+        File fichier_son = new File("48000/726455_Lets-Stomp_48000.wav");
         double[] test = getWavData(fichier_son);
         for(int i = 0; i<test.length; i++){
             System.out.println(test[i]);
