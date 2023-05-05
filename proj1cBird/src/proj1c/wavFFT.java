@@ -57,7 +57,6 @@ public class wavFFT {
             System.out.println(test[i]);
         }
 
-
         try{
             writeToFile(fichier_son, new File("datafiles/output.txt"));
         } catch (IOException e){
