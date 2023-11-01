@@ -8,8 +8,7 @@ import java.io.IOException;
 
 public class wavFFT {
 
-    public static double[] realFFT(File file)
-    {
+    public static double[] realFFT(File file) {
         // Get the .wav data using the readWav class
         double[] data_to_fft = readWav.getWavData(new File("48000/726455_Lets-Stomp_48000.wav"));
 
@@ -29,39 +28,35 @@ public class wavFFT {
         return data_to_fft;
     }
 
-
-    public static void writeToFile(File in, File out) throws IOException
-    {
+    public static void writeToFile(File in, File out) throws IOException {
         PrintWriter print_out = new PrintWriter(out);
         int i;
         double[] data_to_file = realFFT(in);
 
-        for(i=0; i<data_to_file.length; i++){
-            if(data_to_file[i] > 1){
+        for (i = 0; i < data_to_file.length; i++) {
+            if (data_to_file[i] > 1){
                 print_out.println(data_to_file[i]);
             } else {
                 print_out.println(0);
             }
-
         }
         print_out.close();
     }
 
     // main method, solely for testing purposes
     public static void main(String[] args) {
-        File fichier_son = new File("48000/726455_Lets-Stomp_48000.wav");
-        double[] test = realFFT(fichier_son); 
+        File song = new File("48000/726455_Lets-Stomp_48000.wav");
+        double[] test = realFFT(song); 
         int i;
 
-        for(i=0; i<test.length; i++){
+        for(i = 0; i < test.length; i++){
             System.out.println(test[i]);
         }
 
-        try{
-            writeToFile(fichier_son, new File("datafiles/output.txt"));
+        try {
+            writeToFile(song, new File("datafiles/output.txt"));
         } catch (IOException e){
             System.out.println("error");
         }
     }
-
 }
