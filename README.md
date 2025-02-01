@@ -14,7 +14,7 @@
    - The test predictions will be saved to `kaggle_mnist.csv`.
    
    To generate the CSV for q7b (SPAM):
-   - First, go into the `scripts` directory, uncomment the code between lines `312-354` in `featurize.py`, and run `python3 featurize.py`.
+   - First, go into the `scripts` directory, uncomment the code between lines `312-354` in `featurize.py`, then run `python3 featurize.py`.
    - Once the above is done, exit back into the `hw1code` directory, then comment out the code between lines `50-61` and uncomment the code between lines `63-85` in `q7.py`, if the CSV for q7a was generated first.
    - Finally, run `python3 q7.py`.
    - The test predictions will be saved to `kaggle_spam.csv`.
