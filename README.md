@@ -1,4 +1,5 @@
 Student Name: Daniel Cheng
+
 Student ID: 3037750393
 
 1. Go into the `hw1code` directory with Terminal and install the dependencies with `pip install scikit-learn scipy numpy matplotlib`. Make sure that the folders `data` and `scripts` are both directly in the `hw1code` directory.
